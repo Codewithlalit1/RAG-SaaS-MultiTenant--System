@@ -28,7 +28,7 @@ async function getClient() {
   return pool.connect();
 }
 
-// Runs callback inside a transaction with SET LOCAL app.tenant_id for RLS.
+// Runs callback inside a  transaction with SET LOCAL app.tenant_id for RLS.
 // All queries executed via the passed client are scoped to tenantId.
 async function withTenant(tenantId, callback) {
   const client = await pool.connect();
