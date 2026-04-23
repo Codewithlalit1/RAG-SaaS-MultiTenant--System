@@ -1,4 +1,4 @@
-// Transfers tenant identity from the Express request (populated by apiKeyAuth
+// Transfers tenant identity from the Express request (populated by apiKeyAuth.
 // middleware) onto ctx so downstream pipeline handlers are decoupled from req.
 class ApiKeyHandler {
   async handle(ctx) {

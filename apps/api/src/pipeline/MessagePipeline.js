@@ -2,7 +2,7 @@
 //
 // Each handler must expose an async handle(ctx) method.
 // Handlers are executed sequentially in registration order.
-// Any handler may throw to abort the pipeline; the error propagates to the caller.
+// Any handler may throw to abort the pipeline; the error propagates to the caller
 class MessagePipeline {
   constructor() {
     this.handlers = [];

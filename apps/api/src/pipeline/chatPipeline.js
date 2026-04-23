@@ -5,7 +5,7 @@
 //   RateLimit   → enforce daily limit before doing any expensive work
 //   ContextBuild→ warm embedding cache + load history (parallel)
 //   LLM         → set SSE headers, stream response
-//   Persist     → save messages to DB + Redis + Kafka
+//   Persist     → save messages to DB + Redis + Kafka.
 const MessagePipeline     = require('./MessagePipeline');
 const ApiKeyHandler       = require('./handlers/ApiKeyHandler');
 const RateLimitHandler    = require('./handlers/RateLimitHandler');

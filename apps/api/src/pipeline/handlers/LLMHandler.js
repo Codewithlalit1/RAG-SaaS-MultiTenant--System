@@ -2,7 +2,7 @@ const AgentFactory = require('../../services/agents/AgentFactory');
 const logger       = require('../../config/logger');
 
 // Sets SSE headers, streams GPT-4o tokens from the agent, and captures the
-// full response text on ctx for PersistHandler.
+// full response text on ctx for PersistHandler .
 //
 // SSE headers are intentionally set here — not in the route — so that 4xx
 // errors thrown by earlier handlers (RateLimitHandler, etc.) can still be
