@@ -1,6 +1,6 @@
 // All functions take a pg client acquired via db.withTenant(tenantId, cb).
 // RLS on the documents table ensures queries are scoped to the current tenant
-// even without an explicit WHERE tenant_id = ... clause.
+// even without an explicit WHERE tenant_id = ... clause. 
 
 // insert a new document row — status starts as 'processing'
 async function create(client, { tenantId, docId, filename, s3Key, mimeType }) {

@@ -30,7 +30,7 @@ async function findById(id) {
   return rows[0] || null;
 }
 
-// data: { name, plan, vertical, apiKeyHash }
+// data: { name, plan, vertical, apiKeyHash}
 // Limits are set from PLAN_LIMITS based on plan — caller must not pass them.
 async function create({ name, plan = 'starter', vertical = 'generic', apiKeyHash }) {
   const limits = PLAN_LIMITS[plan] ?? PLAN_LIMITS.starter;

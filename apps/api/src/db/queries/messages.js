@@ -19,7 +19,7 @@ async function save(client, {
   return rows[0];
 }
 
-// listBySession — paginated message history for a session (newest-first).
+// listBySession — paginated  message history for a session (newest-first).
 // cursor is the ISO timestamp of the last item from the previous page.
 async function listBySession(client, sessionId, { cursor, limit = 50 } = {}) {
   const params = [sessionId, limit + 1];
