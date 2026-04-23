@@ -9,3 +9,4 @@ class ThrottleError extends Error {
 }
 
 module.exports = ThrottleError;
+// Throllting to add daily chat limit
