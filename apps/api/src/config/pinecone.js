@@ -3,7 +3,7 @@ const config = require('./env');
 const logger = require('./logger');
 
 // Every query and upsert MUST be scoped to a tenant namespace:
-//   pinecone.index().namespace(tenantId).query({ ... })
+//   pinecone.index().namespace(tenantId).query({ .... })
 // This is the primary vector-layer tenant isolation mechanism (Section 6).
 
 const pinecone = new Pinecone({ apiKey: config.pinecone.apiKey });

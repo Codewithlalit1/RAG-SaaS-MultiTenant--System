@@ -1,6 +1,6 @@
 // Kafka client (Singleton).
 // Used by KafkaProducer service and by workers/ consumers.
-// Topics: chat_events, doc_ingested, doc_failed, tenant_over_limit.
+// Topics: chat_events, doc_ingested, doc_failed, tenant_over_limit .
 
 const { Kafka } = require('kafkajs');
 const config = require('./env');
